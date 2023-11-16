@@ -2,14 +2,14 @@
 
 
 // Encontre o elemento <img> pelo atributo alt
-const imgElement = document.querySelector('img[alt="DOM"]');
+// const imgElement = document.querySelector('img[alt="DOM"]');
 
 // Defina o caminho local da imagem
 // const caminhoLocal = 'img/A_Veloz.jpg';
-const caminhoLocal = 'img/B_Veloz.jpg';
+// const caminhoLocal = 'img/B_Veloz.jpg';
 
 // Altere o atributo src do elemento <img> para o caminho local
-imgElement.setAttribute('src', caminhoLocal);
+// imgElement.setAttribute('src', caminhoLocal);
 
 // ____________________________________________________________________________
 
@@ -22,16 +22,20 @@ querySelectorAll() -> seleciona VÁRIOS elementos de acordo com um seletor */
 // ____________________________________________________________________________
 // Modificando elementos
 
+// Selecionado pelo ID
+const titulo = document.getElementById('titulo-principal');
 
-// 1ª Digitação (Aqui)
-
+//  Selecionado pela TAG
+const pagina = document.querySelector('body');
 
 // ____________________________________________________________________________
 
 // Modificando elementos
 
 
-// 2ª Digitação (Aqui)
+titulo.textContent ="Olá Mundo";
+
+pagina.style.backgroundColor = "green";
 
 
 // ____________________________________________________________________________
