@@ -28,15 +28,28 @@ const titulo = document.getElementById('titulo-principal');
 //  Selecionado pela TAG
 const pagina = document.querySelector('body');
 
+// Selecionando todas as TAG's h2
+const subtitulo = document.querySelectorAll('h2');
+
+//  Selecionado pela TAG
+const legenda = document.querySelector('figcaption');
+
+
 // ____________________________________________________________________________
 
 // Modificando elementos
 
-
+// h1
 titulo.textContent ="Olá Mundo";
 
+// Cor de fundo (body)
 pagina.style.backgroundColor = "green";
 
+// Mudando o segundo h2
+subtitulo[1].textContent="Full-Stack";
+
+// Mudando a legenda (figcaption)
+legenda.innerHTML="<b>Veloz e Furioso</b>"
 
 // ____________________________________________________________________________
 
@@ -53,9 +66,9 @@ const subtitulos = document.querySelectorAll('h2');
 // Modifique a cor da fonte de todos os elementos <h2> para azul, por exemplo
 
 // Sintaxe (Arrow Function)
-// subtitulos.forEach(subtitulo => {
-//   subtitulo.style.color = 'blue';
-// });
+subtitulos.forEach(subtitulo => {
+  subtitulo.style.color = 'blue';
+});
 
 // Sintaxe For...of (Loop comum)
 // for (const subtitulo of subtitulos) {
@@ -70,13 +83,24 @@ const subtitulos = document.querySelectorAll('h2');
 // Modificar o texto do <h3> "Editores"
 
 
-// 3ª Digitação (Aqui)
+const tituloEditores = document.querySelector('h3');
+
+tituloEditores.textContent = 'Melhores Editores';
+tituloEditores.style.color = 'orange';
+tituloEditores.style.fontSize = '28';
+
 
 
 // Adicionar um novo editor à lista:
+const listaEditores = document.querySelector('#lista-editores');
 
+const novoEditor = document.createElement('li');
+novoEditor.textContent = 'Sublime';
+listaEditores.appendChild(novoEditor);
 
-// 4ª Digitação (Aqui)
+// Alternando a cor do 3° Item da lista
+const terceiroItem = listaEditores.querySelectorAll('li')[2];
+terceiroItem. style.color = 'orange';
 
 
 
